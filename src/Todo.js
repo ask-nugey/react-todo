@@ -9,7 +9,7 @@ const Todo = ({ todo, toggleTodo, clearTodo }) => {
   };
 
   return (
-    <div>
+    <div className={`c-todo ${todo.completed ? "-completed" : ""}`}>
       <div className="c-radioBtn">
         <input
           type="checkbox"
